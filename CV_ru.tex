@@ -89,10 +89,11 @@
 \personalinfo{%
   % Not all of these are required!
   \email{kol.yashin@yandex.ru}
-  \phone{8 999 1636057}
+  \phone{8 999 163-60-57}
   \github{KolyaYashin}
-  \printinfo{\faTelegram}{Nikolay}[https://t.me/lelouchviabritannia]
+  \printinfo{\faTelegram}{Nikolay}[https://t.me/ive_no_enemies]
   \printinfo{VK}{Коля Яшин}[https://vk.com/id194353391]
+  
   %% You can add your own arbitrary detail with
   %% \printinfo{symbol}{detail}[optional hyperlink prefix]
   % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
@@ -127,35 +128,34 @@
 
 - Студент 2 курса МГТУ им. Н.Э.Баумана по специальности - "Прикладная математика".\\
 - Учусь в ВУЗе на отл, участвую в городских и студенческих олимпиадах по математике.\\
-- Прошёл множество курсов посвященным машинному обучению - Deep Learning School на Stepik, курс Воронцова на ютубе, серию курсов от HSE university на Coursera. Ещё понравились хендбуки по ml от Академии Яндекса.\newline
-- Также участвовал в хакатонах и соревнованиях, посвященным машинному обучению - например, Цифровой Прорыв 2022, а также соревнования на Kaggle.\\
+- Закончил курсы посвященные машинному обучению - Deep Learning School на Stepik, курс Воронцова на ютубе, серию курсов от HSE university на Coursera. \newline
+- Набрался опыта в разработке моделей машинного обучения посредством участия в хакатонах и соревнованиях, например, Цифровой Прорыв 2022, а также соревнования на Kaggle.\\
 - В свободное время люблю играть в настольный теннис, в шахматы, а ещё умею собирать кубик рубика с закрытыми глазами.
 
-\cvsection{PET PROJECT}
+\cvsection{PET PROJECTS}
 
 \cvevent{Vocabulary Bot}{\href{https://github.com/KolyaYashin/VocabBotAiogram/tree/master}{Github}}{}{}
 \begin{itemize}
-\item Бот, позволяющий пользователям запоминать новые слова, путём добавления их в базу данных 
-и закрепления на практике
-\item Стэк технологий - Aiogram, Sqlite, TensorFlow
+\item Разрабатывал телеграм бота для помощи при изучении новых слов английского языка. При создании использовал Telegram API и возможности библиотеки Aiogram. Для сохранения словаря пользователя я использовал базу данных SQLite. А чтобы бот был активен, я задеплоил его на виртуальный сервер от Selectel.
+\newlineВозможности бота:
+\newline- Пользователь может вводить слова на английском и их перевод, и они сохраняться в его словаре
+\newline- Можно проводить тесты по своим словам, чтобы лучше их запомнить (учитывается насколько давно пользователь вспоминал конкретное слово)
+\item Стэк технологий - Aiogram3, SQLite
+\end{itemize}
+
+
+\cvevent{Bitcoin Bot}{\href{https://github.com/KolyaYashin/bitcoin_bot}{Github}}{}{}
+\begin{itemize}
+\item Бот, позволяющий делать предсказания курса биткоина. Для получения временных рядов курса биткоина я использовал Binance. Далее я делал для этого ряда feature extraction, такие как seasonality, trend, window statistics. Для выбора модели я использовал кросс-валидацию и лучшие показатели дало ансамблирование XGBoost и Lasso. Также для визуализации графика я использовал Seaborn.
+\item Стэк технологий - Aiogram3, Scikit-learn, XGBoost, Seaborn
 \end{itemize}
 
 
 \medskip
 
-\cvsection{A Day of My Life}
 
-% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-% \wheelchart{outer radius}{inner radius}{
-% comma-separated list of value/text width/color/detail}
-\wheelchart{1.5cm}{0.5cm}{%
-  6/8em/accent!30/{8-ми часовой сон},
-  3/8em/accent!40/Отдых,
-  8/8em/accent!60/Учёба в ВУЗе,
-  2/10em/accent/Хобби,
-  5/6em/accent!20/Самообразование
-}
 
+\switchcolumn
 % use ONLY \newpage if you want to force a page break for
 % ONLY the current column
 \cvsection{Education}
@@ -169,13 +169,8 @@
 
 %% Switch to the right column. This will now automatically move to the second
 %% page if the content is too long.
-\switchcolumn
 
-\cvsection{My Life Philosophy}
 
-\begin{quote}
-``I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times.''
-\end{quote}
 
 \cvsection{Most Proud of}
 
@@ -187,18 +182,19 @@
 
 \divider
 
-\cvachievement{\faHeartbeat}{Золотая медаль в школе}{Для галочки}
+\cvachievement{\faHeartbeat}{Золотая медаль в школе}{}
 
 \cvsection{Skills}
 
-\cvtag{Python}\\
+\cvtag{Python}
 \cvtag{Numpy}
-\cvtag{Pandas}
-\cvtag{Aiogram}\\
+\cvtag{Pandas}\\
+\cvtag{Aiogram}
 \cvtag{Sklearn}
 \cvtag{TensorFlow}\\
 \cvtag{SQLite}
 \cvtag{PostrgeSQL}
+\cvtag{Git}
 \cvtag{Docker}\\
 \divider
 \newline
@@ -225,7 +221,6 @@
 \medskip
 
 
-% \divider
 
 
 
